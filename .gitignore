@@ -1,0 +1,14 @@
+# Secrets — NEVER upload these
+.env
+*.json
+
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code settings
+.vscode/
