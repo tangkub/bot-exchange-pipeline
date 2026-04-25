@@ -1,0 +1,31 @@
+[0m11:20:41.477719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029046AFD940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029047A95A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029047C47D90>]}
+
+
+============================== 11:20:41.482271 | 5143853c-1a5f-45ea-920a-64942ca325ba ==============================
+[0m11:20:41.482271 [info ] [MainThread]: Running with dbt=1.9.0
+[0m11:20:41.482892 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\TTK\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init bot_exchange', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:20:41.504943 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/TTK/.dbt')}
+[0m11:20:41.505551 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:20:41.507931 [debug] [MainThread]: Starter project path: C:\Users\TTK\bot-exchange-pipeline\venv\Lib\site-packages\dbt\include\starter_project
+[0m11:20:41.530429 [info ] [MainThread]: 
+Your new dbt project "bot_exchange" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:20:41.531382 [info ] [MainThread]: Setting up your profile.
+[0m11:29:58.472460 [info ] [MainThread]: Profile bot_exchange written to C:\Users\TTK\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:29:58.473897 [debug] [MainThread]: Command `dbt init` succeeded at 11:29:58.473772 after 557.10 seconds
+[0m11:29:58.474232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290641B36F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029047CDFBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290641C5BF0>]}
+[0m11:29:58.474586 [debug] [MainThread]: Flushing usage events
+[0m11:29:59.771160 [debug] [MainThread]: An error was encountered while trying to flush usage events
