@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: fct_exchange_rates
+    description: Daily BOT exchange rates with computed metrics and date dimensions
+
+    columns:
+
+      - name: rate_date
+        description: Date of the exchange rate observation
+        tests:
+          - not_null
+
+      - name: currency_code
+        description: ISO 4217 currency code
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['AUD','BND','CAD','CHF','CNY','DKK',
+                       'EUR','GBP','HKD','IDR','INR','JPY',
+                       'MYR','NOK','NZD','PHP','SEK','SGD',
+                       'USD']
+
+      - name: selling_rate
+        description: BOT selling rate
+        tests:
+          - not_null
+
+      - name: buying_transfer_rate
+        description: BOT buying transfer rate
+        tests:
+          - not_null
+
+      - name: mid_rate_check
+        description: Tolerance flag comparing our mid_rate vs API mid_rate
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['OK', 'WARN', 'FAIL']
+
+    tests:
+      - unique:
+          column_name: "concat(cast(rate_date as string), '-', currency_code)"

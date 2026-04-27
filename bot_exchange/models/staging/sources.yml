@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bot_exchange
+    database: bot-exchange-pipeline   # GCP project ID
+    schema: bot_exchange              # BigQuery dataset name
+    tables:
+      - name: daily_rates             # raw table name
+        description: Raw daily exchange rates loaded from BOT API
