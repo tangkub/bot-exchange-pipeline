@@ -33,7 +33,7 @@ def parse_response(raw: dict) -> list[dict]:
         })
     return rows
 
-def get_last_n_days(n: int = 30) -> list[dict]:
+def get_last_n_days(n: int = 180) -> list[dict]:
     """Convenience wrapper: fetch + parse the last N calendar days in 90-day chunks."""
     all_rows = []
     end = date.today()
